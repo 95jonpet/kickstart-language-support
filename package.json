@@ -1,7 +1,7 @@
 {
   "name": "kickstart-language-support",
   "displayName": "Kickstart Language Support",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "peterjonsson",
   "description": "Support for Kickstart files",
   "author": {
