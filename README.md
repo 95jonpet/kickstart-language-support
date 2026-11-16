@@ -17,7 +17,7 @@ This extension adds the following features to Visual Studio Code:
 - Completion support for `.ks` files.
 - Snippets for commonly used sections in `.ks` files.
 
-## Linter install
+## Installing a linter
 
 The `ksvalidator` linter can typically be installed using `dnf` or `yum` on RHEL-based distributions of Linux:
 
@@ -32,3 +32,18 @@ For other Linux distributions, [pykickstart](https://pypi.org/project/pykickstar
 ```bash
 python3 -m pip install pykickstart
 ```
+
+## Associating file types
+
+By default, this extension is only activated for kickstart files using the `.ks` file extension.
+
+Kickstart syntax highlighting can be enabled for other file extensions using the `files.associations` configuration (available through _User Settings_) for VS Code:
+
+```json
+"files.associations": {
+    "*.ks.template": "kickstart"
+}
+```
+
+In this case, `kickstart` syntax is associated with files matching the `*.ks.template` pattern.
+See [VS Code Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) for further reference.
